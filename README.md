@@ -1,8 +1,11 @@
+# Run redis instance
+docker run redis
 
-# To crete image 
-docker build -t cuckoo/visits .
-# To run image as container
-docker run -p 9090:8081 cuckoo/visits
+# This is to run image 
+docker-compose up
+
+# --build startup our image with all the chnegs
+docker-compose up --build
 
 # To validate all the available images
 docker ps --all
